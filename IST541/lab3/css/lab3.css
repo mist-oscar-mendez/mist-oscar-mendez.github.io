@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	text-align: center;
+	background-color: turquoise;
+	padd1ing: 15px;
+	margin: 3px;
+	font-size: 125%;
+	color: black;
+}
+a:hover {
+	font-size:200%;
+	background-color:turquoise;
+	color: white;
+}
