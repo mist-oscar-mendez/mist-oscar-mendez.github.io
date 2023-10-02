@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>questions1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="koala.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+ 
+	<h1>Types of </h1>
+ 
+	<h3 id="hint">Hint: Click on the image of the different sprayers to read more information.</h3>
+  	<div class ="spray-container">
+		<p class="spray-title">Four-Gallon Sprayer</p>
+		<img onclick ="showInfo1()" id="fourgallon" src="img/fourgallon.jpeg" width="500" height="332"/>
+  		<div id="answer1"></div>  <!-- This is a placeholder to display the answer-->
+	</div>
+	<h2> </h2>
+	<br>
+	<div class ="spray-container">
+		<p class="spray-title">One-Gallon Sprayer</p>
+		<img onclick="showInfo2()" id="onegallon" src="img/onegallon.png" width="500" height="332"/>
+  		<div id="answer2"></div>  <!-- This is a placeholder to display the answer-->
+	</div>  
+	<br>
+	<a href="question1.html"> Ratios</a>
+  	<a href="question2.html"> Knowledge Check</a>
+	<a href ="page3.html"> Industrial Sprayers</a>
+</div> <!-- closing  “wrapper” -->
+<script>
+	function showInfo1() {
+	   $("#answer1").html("<h2>Four gallon sprayer = four ounces </h2> <p> This sprayer is highly recommended for teams who have multiple mats and also host tournaments. The sprayer has two straps that allow you to carry the sprayer comfortbaly. </p>");
+	}
+ 	function showInfo2() {
+	   $("#answer2").html("<h2>One gallon sprayer = One ounce </h2> <p>This sprayer is efficent for spraying the mats for daily practice or for personal use. The gallon container normally lasts up to five days when spraying one mat daily. </p>");
+	}
+	function hideAnswer1() {
+	   $("#onegallon").show();
+	   $("#oneounce").hide();
+	   $("#answer1").html("");  
+	}
+</script>
+</body>
+</html>
