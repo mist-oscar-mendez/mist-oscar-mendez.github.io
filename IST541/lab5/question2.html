@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>questions1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="koala.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<h1>How much of the cleaning solution should be added per gallon of water?</h1>
+		<h3>Click on one of the following choices</h3>
+
+		<h2 onclick="rightAnswer()" class="choices"> 1 ounce </h2>
+		<h2 onclick="wrongAnswer2()" class="choices"> 1 cup </h2>
+		<h2 onclick="wrongAnswer2()" class="choices"> 4 ounces </h2>
+		<h2 onclick="wrongAnswer1()" class="choices"> 1 teaspoon </h2>
+
+		<div id="feedback"></div>
+		<img id="correct" src="img/correct.png" />
+		<img id="incorrect" src="img/incorrect.png" />
+		<a href="question1.html"> Industrial Sprayers</a>
+		<a href="question2.html"> Knowledge Check</a>
+	</div> <!-- closing  “wrapper” -->
+ 	<script>
+      function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! This ratio can be applied when using sprayers of different gallon sizes.</h2>");
+         $("#correct").show();
+		  $("#incorrect").hide();
+      }
+	function wrongAnswer1(){
+      $("#feedback").html("<h2 style='color:red'> This will not be enough cleaning solution to prevent infections! </h2>");
+      $("#correct").hide();
+		$("#incorrect").show();
+   	}
+   	function wrongAnswer2(){
+      $("#feedback").html("<h2 style='color:red'> Applying this much cleaning solution to a gallon of water will cause irritation.</h2>");
+      $("#correct").hide();
+		$("#incorrect").show();
+   	}
+   </script>
+	
+</body>
+</html>
