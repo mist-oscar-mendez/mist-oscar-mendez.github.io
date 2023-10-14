@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Correct Ratio of Cleaning Solution and Water</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/koala.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+ 
+	<h1>Ounces of cleaning solution per gallon?</h1>
+ 
+	<h3 id="hint">Hint: Hover over the image of the different sprayers to find out!</h3>
+  	<div class ="spray-container">
+		<p class="spray-title">Four-Gallon Sprayer</p>
+		<img onmouseenter="showAnswer()" id="fourgallon" src="img/fourgallon.jpeg" width="500" height="332"/>
+  		<img onmouseleave="hideAnswer()" id="fourounces" src="img/fourounces.jpeg" width="503" height="333" />
+  		<div id="answer"></div>  <!-- This is a placeholder to display the answer-->
+	</div>  
+	<br>
+	<div class ="spray-container">
+		<p class="spray-title">One-Gallon Sprayer</p>
+		<img onmouseenter="showAnswer1()" id="onegallon" src="img/onegallon.png" width="500" height="332"/>
+  		<img onmouseleave="hideAnswer1()" id="oneounce" src="img/oneounce.jpeg" width="503" height="333" />
+  		<div id="answer1"></div>  <!-- This is a placeholder to display the answer-->
+	</div>  
+	<br>
+	<div class ="spray-container">
+		<p class="spray-title">Two-Gallon Sprayer</p>
+  		<img onmouseenter="showAnswer2()" id="twogallons" src="img/twogallons.jpeg" width="500" height="332"/>
+  		<img onmouseleave="hideAnswer2()" id="twoounces" src="img/twoounces.jpeg" width="503" height="333" />
+  	<div id="answer2"></div>  <!-- This is a placeholder to display the answer-->
+	</div>	
+  	<br><br>
+	<a href="index.html"> Home</a>
+  	<a href="page1.html"> Guided Steps</a>
+	<a href ="page2.html"> Knowledge Check</a>
+	<a href ="page3.html"> Ratios</a>
+	<a href ="page4.html"> Layout of Sprayer</a>
+	<a href ="page5.html"> Fluid Pressure</a>
+</div> <!-- closing  “wrapper” -->
+<script>
+	function showAnswer() {
+	   $("#fourgallon").hide();
+	   $("#fourounces").show();
+	   $("#answer").html("<h2>Four gallon sprayer = four ounces </h2>");
+	}
+	function hideAnswer() {
+	   $("#fourgallon").show();
+	   $("#fourounces").hide();
+	   $("#answer").html("");  
+	}
+ 	function showAnswer1() {
+	   $("#onegallon").hide();
+	   $("#oneounce").show();
+	   $("#answer1").html("<h2>One gallon sprayer = One ounce </h2>");
+	}
+	function hideAnswer1() {
+	   $("#onegallon").show();
+	   $("#oneounce").hide();
+	   $("#answer1").html("");  
+	}
+	function showAnswer2() {
+	   $("#twogallons").hide();
+	   $("#twoounces").show();
+	   $("#answer2").html("<h2>Two gallon sprayer = Two ounces </h2>");
+	}
+	function hideAnswer2() {
+	   $("#twogallons").show();
+	   $("#twoounces").hide();
+	   $("#answer2").html("");
+	}
+</script>
+</body>
+</html>

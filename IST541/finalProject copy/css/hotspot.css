@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body {
+	font-family:'Open Sans', sans-serif;
+	text-align:center;   /* centers all content */
+	background-color: #d0d5cd;
+	color:#444;
+}
+
+#wrapper {
+	width:85%;
+	margin:0 auto;       /* centers wrapper */
+}
+a {
+	padding: 15px;
+	margin: 3px;
+	font-size: 125%;
+	background-color:  #03c8ba; 
+	color: black; 
+}
+a:hover {
+	font-size:200%;
+	background-color: #03c8ba;  
+	color: white; 
+}
+#feedback {
+	background: lightyellow; /* background color */
+	padding: 20px; 
+    font-size: 125%;
+}
+h1{
+	font-family: 'Black Ops One', cursive;
+	background-color:#03C8BA;
+}
+h1, h2 { 
+	text-align:center;     /* centers h1 and h2 content */
+}
+p {
+	text-align: left;
+	font-size: 125%;
+}
+ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-left: 20px; /* Adjust the margin to your desired spacing */
+  text-align: center; /* You can adjust the alignment as needed */
+}

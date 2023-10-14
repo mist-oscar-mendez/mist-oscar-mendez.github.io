@@ -1,0 +1,80 @@
+@charset "UTF-8";
+#wrapper {
+	width: 85%;
+	margin: 0 auto;
+}
+body {
+	background-color: #d0d5cd;   /* background color */
+	color: #444;          /* text color for the entire page */
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+h1{
+	font-family: 'Black Ops One', cursive;
+	background-color:#03C8BA;
+}
+h1, h2 { 
+	text-align:center;     /* centers h1 and h2 content */
+}
+a {
+	padding: 15px;
+	margin: 3px;
+	font-size: 125%;
+	background-color:  #03c8ba; 
+	color: black; 
+}
+a:hover {
+	font-size:200%;
+	background-color: #03c8ba;  
+	color: white; 
+}
+
+ #correct {
+	display: none; /* hides content */
+	border: black 5px solid;
+}
+#incorrect {
+	display: none; /* hides content */
+	border: black 5px solid;
+}
+ #fourgallon {
+	 border: black 5px solid;
+}
+#fourounces {
+	display: none; /* hides content */
+	border: black 5px solid;
+}
+#onegallon {
+	 border: black 5px solid;
+}
+#oneounce {
+	display: none; /* hides content */
+	border: black 5px solid;
+}
+#twogallons {
+	 border: black 5px solid;
+}
+#twoounces {
+	display: none; /* hides content */
+	border: black 5px solid;
+}
+.spray-container {
+    border: 5px solid ;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+	/*font-size: 36px;*/
+}
+.spray-title {
+    padding:15px;
+	text-align:center;
+	background-color:#03C8BA;
+	font-weight: bold;
+	font-size: 150%;
+}
+.choices {
+	cursor: pointer;
+}
+ 
