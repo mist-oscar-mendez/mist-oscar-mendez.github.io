@@ -15,11 +15,13 @@
 	<key>DocPrefMainSplitterValue</key>
 	<string>584.00000000000000000000</string>
 	<key>DocPrefPlayheadTime</key>
-	<string>298</string>
+	<string>0</string>
 	<key>DocPrefPreviewAutoFit</key>
 	<integer>0</integer>
 	<key>DocPrefPreviewScaleValue</key>
-	<string>0.88148148148148142145</string>
+	<string>0.37239583333333331483</string>
+	<key>DocPrefTrackHeaderWidth</key>
+	<string>80.00000000000000000000</string>
 	<key>DocPrefTrackHeights</key>
 	<array>
 		<integer>48</integer>
