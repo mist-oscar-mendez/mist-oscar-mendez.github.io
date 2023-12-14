@@ -172,6 +172,8 @@ cp.imagesJSONCacheForLocal=true;cp.imageToJSONPathMap={
 "dr/Text_Caption_176.png": "img2.json",
 "dr/Text_Caption_18.png": "img2.json",
 "dr/Text_Caption_191.png": "img2.json",
+"dr/Text_Caption_193.png": "img3.json",
+"dr/Text_Caption_194.png": "img3.json",
 "dr/Text_Caption_28.png": "img3.json",
 "dr/Text_Caption_4.png": "img3.json",
 "dr/Text_Caption_88.png": "img3.json",
